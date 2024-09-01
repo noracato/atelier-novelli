@@ -93,6 +93,12 @@ a {
 .shadow-purple {
   box-shadow: 12px 12px var(--color-purple);;
 }
+.shadow-red {
+  box-shadow: 12px 12px var(--color-red);;
+}
+.shadow-pink {
+  box-shadow: 12px 12px var(--color-pink);;
+}
 .normal-text {
   font-size: 32px !important;
   line-height: 1.5;
@@ -111,13 +117,33 @@ a {
 }
 .tag {
   position: absolute;
-  transform: rotate(90deg);
+  writing-mode: vertical-rl;
   letter-spacing: -1.07px;
   font-size: 80px;
   font-weight: bold;
-  right: -107px;
-  top: 20px;
+  right: -70px;
+  top: -15px;
 }
+.fixed-side {
+  position: absolute;
+  left: -74px;
+}
+.side-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* SIDE ICONS */
+.icon {
+  width: 75px;
+}
+
+.fb.cls-1{fill:none;}
+.fb.cls-2{fill:#366cff;}
+.fb.cls-3{fill:#fff;}
+.fb.cls-4{clip-path:url(#clippath);}
 
 /* HEADER */
 
