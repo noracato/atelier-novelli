@@ -2,7 +2,7 @@ body {
   font-family: 'GeneralSans-Variable';
   background-color: var(--color-yellow);
   font-weight: 534;
-  color: #3B3636;
+  color: var(--color-gray);
 }
 
 :root {
@@ -11,18 +11,25 @@ body {
   --color-green: #138e2a;
   --color-pink: #ff36fa;
   --color-yellow: #ed9d11;
+  --color-gray: #3B3636;
 }
 
 h1 {
-  font-size: 92px;
-  letter-spacing: -4px;
+  font-size: 80px;
+  letter-spacing: -2.95px;
   font-weight: 486;
+  line-height: 1.048;
 }
 
 p {
   font-size: 32px;
   line-height: 1.5;
   font-weight: 360;
+}
+
+a {
+  color: var(--color-gray);
+  text-decoration: underline;
 }
 
 .container {
@@ -59,9 +66,35 @@ p {
   flex-direction: column;
   justify-content: end;
 }
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shadow-green {
+  box-shadow: 12px 12px var(--color-green);;
+}
+.normal-text {
+  font-size: 32px !important;
+  line-height: 1.5;
+  font-weight: 360;
+  letter-spacing: 0;
+  color: var(--color-gray) !important;
+}
+
+.yellow-divider {
+  border-top: 20px dashed var(--color-yellow);
+}
+
+/* HEADER */
 
 svg.color-change {
   width: 100%;
+  height: 154px;
 }
 
 svg.color-change .cls-1, svg.color-change .cls-2 {
