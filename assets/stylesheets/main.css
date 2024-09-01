@@ -1,0 +1,140 @@
+body {
+  font-family: 'GeneralSans-Variable';
+  background-color: var(--color-yellow);
+  font-weight: 534;
+  color: #3B3636;
+}
+
+:root {
+  --color-red: #f30;
+  --color-purple: #9934ff;
+  --color-green: #138e2a;
+  --color-pink: #ff36fa;
+  --color-yellow: #ed9d11;
+}
+
+h1 {
+  font-size: 92px;
+  letter-spacing: -4px;
+  font-weight: 486;
+}
+
+p {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 360;
+}
+
+.container {
+  background-color: #fff;
+  width: 900px;
+}
+
+.bg-red {
+  background-color: var(--color-red) !important;
+}
+.bg-green {
+  background-color: var(--color-green) !important;
+}
+.bg-pink {
+  background-color: var(--color-pink) !important;
+}
+.color-purple{
+  color: var(--color-purple);
+}
+.color-green{
+  color: var(--color-green);
+}
+.color-red{
+  color: var(--color-red);
+}
+.color-yellow {
+  color: var(--color-yellow);
+}
+.italic {
+  font-family: 'GeneralSans-VariableItalic';
+}
+.flex-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+svg.color-change {
+  width: 100%;
+}
+
+svg.color-change .cls-1, svg.color-change .cls-2 {
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-iteration-count: infinite;
+  transition: color 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+svg.color-change .cls-1 {
+  fill: var(--color-red);
+  animation-name: change-top-letters;
+}
+
+svg.color-change .cls-2 {
+  fill: var(--color-purple);
+  animation-name: change-bottom-letters;
+}
+
+img.width-100 {
+  width: 100%;
+}
+
+.bar {
+  height: 17px;
+  width: calc(100% - 30px);
+  background-color: var(--color-purple);
+  display: inline-block;
+  position: absolute;
+  transition: height 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.bar-1 {
+  width: 194px;
+}
+
+.menu-block:hover .bar{
+  height: 100%;
+}
+.menu-block:hover .menu-item{
+  color: #fff;
+  mix-blend-mode: plus-lighter;
+}
+
+.menu-block {
+  height: 100px;
+}
+
+.menu-item {
+  display: inline-block;
+  padding-top: 30px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 495;
+  letter-spacing: -1px;
+}
+
+
+@keyframes change-top-letters {
+  0% { fill: var(--color-red); }
+
+  33% { fill: #0b89d6; }
+
+  66% { fill: var(--color-yellow); }
+
+  100% { fill: var(--color-red); }
+}
+@keyframes change-bottom-letters {
+  0% { fill: var(--color-purple); }
+
+  33% { fill: var(--color-pink); }
+
+  66% { fill: var(--color-green); }
+
+  100% { fill: var(--color-purple); }
+}
