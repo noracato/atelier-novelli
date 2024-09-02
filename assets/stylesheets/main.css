@@ -26,6 +26,11 @@ h2 {
   line-height: 0.6569;
   font-weight: bold;
 }
+h3 {
+  font-size: 138px;
+  letter-spacing: -8.69px;
+  font-weight: 360;
+}
 
 p {
   font-size: 32px;
@@ -242,7 +247,7 @@ img.width-100 {
 }
 
 .menu-block {
-  height: 100px;
+  height: 87px;
 }
 
 .menu-item {
@@ -252,6 +257,7 @@ img.width-100 {
   line-height: 1.1;
   font-weight: 495;
   letter-spacing: -1px;
+  padding-left: 4px;
 }
 
 
