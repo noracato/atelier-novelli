@@ -88,8 +88,8 @@ a {
   flex-direction: column;
 }
 .center {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .transition {
@@ -200,8 +200,8 @@ a {
 /* HEADER */
 
 svg.color-change {
-  width: 100%;
-  height: 154px;
+  height: 199px;
+  margin-left: -25px;
 }
 
 svg.color-change .cls-1, svg.color-change .cls-2 {
@@ -219,6 +219,15 @@ svg.color-change .cls-1 {
 svg.color-change .cls-2 {
   fill: var(--color-purple);
   animation-name: change-bottom-letters;
+}
+
+.subtitle {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: var(--color-purple);
+  font-size: 22px;
+  letter-spacing: -1.21px;
+  font-weight: 416;
 }
 
 img.width-100 {
