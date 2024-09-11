@@ -1,6 +1,6 @@
 body {
   font-family: 'GeneralSans-Variable';
-  background-color: var(--color-yellow);
+  background-color: #d3d1d2;
   font-weight: 534;
   color: var(--color-gray);
 }
@@ -119,6 +119,9 @@ a {
 .shadow-sm-pink {
   box-shadow: 6px 6px var(--color-pink);;
 }
+.shadow-sm-black {
+  box-shadow: 6px 6px #000;
+}
 .shadow-green:hover {
   box-shadow: 4px 4px var(--color-green);;
 }
@@ -142,6 +145,10 @@ a {
 }
 .shadow-sm-pink:hover {
   box-shadow: 2px 2px var(--color-pink);;
+}
+.shadow-sm-black:hover {
+  box-shadow: 2px 2px #000;
+  cursor: pointer;
 }
 .normal-text {
   font-size: 32px !important;
@@ -179,19 +186,20 @@ a {
 .side-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
+  margin-top: 55px;
 }
 
 /* SIDE ICONS */
 .icon {
-  width: 72px;
+  width: 68px;
   margin-top: 14px;
   margin-left: -43px;
 }
 
 .icon.fb {
-  margin-top: 45px;
+  margin-top: 103px;
 }
 .fb .cls-1{fill:none;}.fb .cls-2{fill:#366cff;}.fb .cls-3{fill:#fff;}.fb .cls-4{clip-path:url(#clippath1);}
 .linkedin .cls-1{fill:none;}.linkedin .cls-2{fill:#36d8ff;}.linkedin .cls-3{fill:#fff;}.linkedin .cls-4{clip-path:url(#clippath2);}
@@ -206,9 +214,9 @@ svg.color-change {
 
 svg.color-change .cls-1, svg.color-change .cls-2 {
   animation-duration: 10s;
-  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-timing-function: steps(1);
   animation-iteration-count: infinite;
-  transition: color 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 3s;
 }
 
 svg.color-change .cls-1 {
@@ -273,18 +281,18 @@ img.width-100 {
 @keyframes change-top-letters {
   0% { fill: var(--color-red); }
 
-  33% { fill: #0b89d6; }
+  25% { fill: #0b89d6; }
 
-  66% { fill: var(--color-yellow); }
+  50% { fill: var(--color-red); }
 
   100% { fill: var(--color-red); }
 }
 @keyframes change-bottom-letters {
   0% { fill: var(--color-purple); }
 
-  33% { fill: var(--color-pink); }
+  25% { fill: var(--color-yellow); }
 
-  66% { fill: var(--color-green); }
+  50% { fill: var(--color-green); }
 
   100% { fill: var(--color-purple); }
 }
