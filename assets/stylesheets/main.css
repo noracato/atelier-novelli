@@ -76,7 +76,7 @@ a {
   color: var(--color-pink);
 }
 .italic {
-  font-family: 'GeneralSans-VariableItalic';
+  font-family: 'GeneralSans-VariableItalic', 'GeneralSans-Variable';
 }
 .flex-bottom {
   display: flex;
